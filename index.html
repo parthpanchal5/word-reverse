@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Word Reverse is an app which lets users give the inputs like word or sentence & reverses it and displays the result">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="wr.png">
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+  <title>Word Repeator</title>
+</head>
+<body>
+  <div class="container mt-3 pt-3">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-lg-4"></div>
+      <div class="col-md-12 col-sm-12 col-lg-4">
+        <h1 class="text-center"><span class="bg-danger text-white pl-2 pr-2 rounded"> Word</span> Reverser</h1>
+        <form class="mt-5" id="word-form">
+          <div class="form-group">
+            <label for="text" class="text-danger"><h5>Enter Text: </h5></label>
+            <input type="text" id="text" class="form-control border border-danger" autocomplete="off" placeholder="Enter your text" autofocus>
+          </div>
+          <div class="btn-group mt-3">
+            <input type="submit" class="btn btn-danger" value="Reverse it" onclick="strReverse()">
+            <button id="copy" type ="button" class="btn btn-success" onclick="copyText()">Copy to clipboard</button>
+          </div>
+          <div class="card border-danger mt-4 shadow-lg p-4 mb-4 bg-white">
+						<div class="form-group">
+							<textarea class="form-control form-control-lg" id="output"></textarea>
+						</div>
+          </div>          
+        </form>
+      </div>
+      <div class="col-md-4 col-sm-12 col-lg-4"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
+  <script src="main.js"></script>
+</body>
+</html>
